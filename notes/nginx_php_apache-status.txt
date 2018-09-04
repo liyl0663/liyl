@@ -1,0 +1,14 @@
+apache ×´Ì¬¼à²â
+/etc/httpd/conf.d/info.conf
+<Location "/httpd-info">
+    SetHandler server-info
+</Location>
+
+ExtendedStatus On
+<Location /httpd-status>
+    SetHandler server-status
+</Location>
+
+php fastcgi ×´Ì¬¼à²â
+/usr/local/php/etc/php-fpm.d/www.conf
+pm.status_path = /status.php
