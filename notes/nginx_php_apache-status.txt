@@ -12,3 +12,6 @@ ExtendedStatus On
 php fastcgi ×´Ì¬¼à²â
 /usr/local/php/etc/php-fpm.d/www.conf
 pm.status_path = /status.php
+########################
+ps -eo "comm,%mem,%cpu"|awk '{A[$1]+=$2;B[$1]+=$3}END{for(a in A)if(A[a]||B[a]){print A[a],"\t"B[a],"\t"a}}'
+
