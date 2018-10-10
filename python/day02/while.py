@@ -30,11 +30,28 @@
 #         break
 #     print('working......')
 #######################################################################
-count = 0
-result = 0
-while count < 100:
-    count += 1
-    if count % 2: ##counter % 2 的结果不是0就是1，1为True,0为False
-        continue
-    result += count
-print(result)
+# count = 0
+# result = 0
+# while count < 100:
+#     count += 1
+#     if count % 2: ##counter % 2 的结果不是0就是1，1为True,0为False
+#         continue
+#     result += count
+# print(result)
+##########################################################################
+
+import random
+number = random.randint(1,10)
+counter = 0
+
+while counter < 5:
+    answer = int(input('guest the number:'))
+    if answer > number:
+        print('too big')
+    elif answer < number:
+        print('too small')
+    else:
+        print('yes')
+        break
+else:
+    print('The number:',number)

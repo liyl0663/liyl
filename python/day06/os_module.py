@@ -1,0 +1,10 @@
+import os
+print(os.getcwd())
+print(os.listdir('/root/'))
+#print(os.mkdir('/tmp/demo'))
+#print(os.makedirs('/tmp/abc/xyz'))
+# print(os.chdir('/tmp/abc'))
+# print(os.symlink('/etc/hosts','/tmp/abc/zhuji'))
+#print(os.unlink('/tmp/abc/zhuji'))
+#print(os.mknod('123.txt'))
+print(os.rename('123.txt','235.txt'))

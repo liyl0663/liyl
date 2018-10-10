@@ -1,0 +1,7 @@
+#定义用户信息配置文件
+/etc/login.defs
+
+#隐藏版本号
+/etc/issue
+
+
